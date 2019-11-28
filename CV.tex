@@ -1,0 +1,343 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Cristiano Ronaldo dos Santos Aveiro}
+\newcommand{\CVTitle}{John Doe's CV for Acme Corporation}
+\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+\newcommand{\CVWebpage}{https://www.cristianoronaldo.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/Turin+Piedmont}
+{Turin, Piedmont}
+\par
+\href{mailto:cr@cristianoronaldo.com}
+{cr@cristianoronaldo.com}
+\,\SubBulletSymbol\,
+(+39)\,011.07.23.021
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional Experience}
+{Professional Experience}
+{PDF:ProfessionalExperience}
+
+\Entry
+{\textbf{Juventus Football Club}},
+Turin, Italy
+
+\Gap
+\BulletItem
+Forward, Attacking Department
+\hfill
+\DatestampYMD{2018}{08}{15} --
+Present
+\begin{Detail}
+\SubBulletItem
+Focus:
+Winning the UEFA Champions League
+\end{Detail}
+
+\Entry
+{\textbf{Real Madrid Club de Fútbol}},
+Madrid, Spain
+
+\Gap
+\BulletItem
+Forward, Attacking Department
+\hfill
+\DatestampYMD{2009}{08}{15} --
+\DatestampYMD{2018}{08}{15}
+\begin{Detail}
+\SubBulletItem
+Focus:
+Helped to bring Real Madrid La Decima and later a three-peat in the Champions League
+\end{Detail}
+
+\Entry
+{\textbf{Manchester United Football Club}},
+Manchester, England
+
+\Gap
+\BulletItem
+Forward, Attacking Department
+\hfill
+\DatestampYMD{2003}{08}{15} --
+\DatestampYMD{2009}{08}{15}
+\begin{Detail}
+\SubBulletItem
+Focus:
+Led Manchester United to glory in England and all of Europe
+\end{Detail}
+
+\Entry
+{\textbf{Sporting Clube de Portugal}},
+Lisbon, Portugal
+
+\Gap
+\BulletItem
+Forward, Attacking Department
+\hfill
+\DatestampYMD{2002}{08}{15} --
+\DatestampYMD{2003}{08}{15}
+\begin{Detail}
+\SubBulletItem
+Focus:
+Rose through the ranks in one season
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HONORS & ACHIEVEMENTS - CLUB %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Team Honors \&\newline
+Achievements}
+{Club Honors \& Achievements}
+{PDF:ClubHonorsAndAchievements}
+
+\Entry
+{\textbf{Portugal}}
+
+\Gap
+\BulletItem
+UEFA European Championship: 2016
+\BulletItem
+UEFA Nations League: 2018–19
+
+\Entry
+{\textbf{Juventus Football Club}}
+
+\Gap
+\BulletItem
+Serie A: 2018–19
+\BulletItem
+Supercoppa Italiana: 2018
+
+\Entry
+{\textbf{Real Madrid Club de Fútbol}}
+
+\Gap
+\BulletItem
+La Liga: 2011–12, 2016–17
+\BulletItem
+Copa del Rey: 2010–11, 2013–14
+\BulletItem
+Supercopa de España: 2012, 2017
+\BulletItem
+UEFA Champions League: 2013–14, 2015–16, 2016–17, 2017–18
+\BulletItem
+UEFA Super Cup: 2014, 2017
+\BulletItem
+FIFA Club World Cup: 2014, 2016, 2017
+
+\Entry
+{\textbf{Manchester United Football Club}}
+
+\Gap
+\BulletItem
+Premier League: 2006–07, 2007–08, 2008–09
+\BulletItem
+FA Cup: 2003–04
+\BulletItem
+Football League Cup: 2005–06, 2008–09
+\BulletItem
+FA Community Shield: 2007
+\BulletItem
+UEFA Champions League: 2007–08
+\BulletItem
+FIFA Club World Cup: 2008
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HONORS & ACHIEVEMENTS - INDIVIDUAL %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Individual Honors \&\newline
+Achievements}
+{Individual Honors \& Achievements}
+{PDF:IndividualHonorsAndAchievements}
+
+\BulletItem
+FIFA Ballon d'Or/Ballon d'Or: 2008, 2013, 2014, 2016, 2017
+\BulletItem
+FIFA World Player of the Year: 2008
+\BulletItem
+FIFPro World Player of the Year: 2008
+\BulletItem
+The Best FIFA Men's Player: 2016, 2017
+\BulletItem
+UEFA Best Player in Europe Award: 2014, 2016, 2017
+\BulletItem
+UEFA Club Footballer of the Year: 2007–08
+\BulletItem
+UEFA Club Forward of the Year: 2007–08
+\BulletItem
+PFA Portuguese Player of the Year: 2016, 2017, 2018, 2019
+\BulletItem
+European Golden Shoe: 2007–08, 2010–11, 2013–14, 2014–15
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Portuguese: Native language.
+
+\Gap
+\BulletItem
+Spanish: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+English: Intermediate (reading); basic (speaking, writing).
+
+% Manual page break.
+\newpage
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Sir Alex Ferguson}
+\newline
+Manager, Manchester United Football Club
+\newline
+\href{mailto:siralex@example.com}
+{siralex@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,222-2222
+
+\BigGap
+\BulletItem
+\textbf{José Mourinho}
+\newline
+Manager, Real Madrid Club de Fútbol
+\newline
+\href{mailto:thechosenone@example.com}
+{thechosenone@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\BigGap
+\BulletItem
+\textbf{Carlo Ancelotti}
+\newline
+Manager, Real Madrid Club de Fútbol
+\newline
+\href{mailto:carletto@example.com}
+{carletto@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\BigGap
+\BulletItem
+\textbf{Zinedine Zidane}
+\newline
+Manager, Real Madrid Club de Fútbol
+\newline
+\href{mailto:tacticalbanana@example.com}
+{tacticalbanana@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\BigGap
+\BulletItem
+\textbf{Massimiliano Allegri}
+\newline
+Manager, Juventus Football Club
+\newline
+\href{mailto:max@example.com}
+{max@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\BigGap
+\BulletItem
+\textbf{Maurizio Sarri}
+\newline
+Manager, Juventus Football Club
+\newline
+\href{mailto:alicebobcarol@example.com}
+{sarriball@example.com}
+\,\SubBulletSymbol\,
++1\,(555)\,333-3333
+
+\end{Body}
+
+\end{document}
+https://www.overleaf.com/project/5dd614e64d1b4600011d9085
